@@ -1,0 +1,8 @@
+{
+  "name": "jd",
+  "version": "1.0.0",
+  "description": "Manage Johnny.Decimal systems with AI-assisted inbox processing, classification, JDex maintenance, and system setup. Supports single and multi-system (SYS.AC.ID) configurations.",
+  "author": {
+    "name": "Nick Gerakines"
+  }
+}
