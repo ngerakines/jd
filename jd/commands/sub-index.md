@@ -13,7 +13,7 @@ Scan a +SUB category, update its index file, and optionally create new
 
 `$ARGUMENTS` may contain:
 
-- A system code (e.g., `N42`) and category number (e.g., `51`) to target
+- A system code (e.g., `P10`) and category number (e.g., `51`) to target
   a specific +SUB category.
 - Just a system code to list all +SUB categories in that system.
 - No arguments to discover all +SUB categories across all systems.
@@ -40,6 +40,6 @@ When the user wants to add a new +SUB entry:
 
 ```
 /jd:sub-index
-/jd:sub-index N42
-/jd:sub-index N42 51
+/jd:sub-index P10
+/jd:sub-index P10 51
 ```

@@ -39,9 +39,9 @@ conflicts.
 For each system to create, gather:
 
 - **System code** (multi-system only): A three-character `[A-Z][0-9][0-9]`
-  identifier. Encourage memorable codes (e.g., `N42` for personal, `G24` for
-  GitHub work). The code should be visually distinctive.
-- **System name**: A plain-English name (e.g., "Personal", "GitHub", "Hannah").
+  identifier. Encourage memorable codes (e.g., `P10` for personal, `W20` for
+  work). The code should be visually distinctive.
+- **System name**: A plain-English name (e.g., "Personal", "Work", "Jamie").
 - **Root location**: Where the system will live on disk. Common locations:
   - `~/Library/Mobile Documents/com~apple~CloudDocs/JD/` (iCloud Drive)
   - `~/Documents/JD/`
@@ -74,7 +74,7 @@ IDs as content arrives.
 Create the system root folder:
 
 - **Single system**: `[Root]/` (e.g., `~/JD/`)
-- **Multi-system**: `[Root]/SYS Name/` (e.g., `~/JD/N42 Personal/`)
+- **Multi-system**: `[Root]/SYS Name/` (e.g., `~/JD/P10 Personal/`)
 
 ### 2.2 Area Folders
 
@@ -165,7 +165,7 @@ ID in the system.
 - Every folder that exists must have a JDex entry
 - Every JDex entry must have a corresponding folder
 - +SUB entries are listed inline under their parent ID
-- Cross-system references use arrow notation: `→ N42.34.01`
+- Cross-system references use arrow notation: `→ P10.34.01`
 
 ---
 
@@ -221,7 +221,7 @@ When setting up multiple systems at once:
 - Each system gets its own independent JDex
 - Each system gets its own standard zeros
 - Cross-system references should be noted during setup if known
-  (e.g., "V06.32.01 will reference N42.34.01 for health insurance")
+  (e.g., "F50.32.01 will reference P10.34.01 for health insurance")
 - Suggest the user set up one system fully before moving to the next
 
 ---

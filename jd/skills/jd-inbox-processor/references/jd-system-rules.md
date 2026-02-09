@@ -62,8 +62,8 @@ Example: `15.52` means area `10-19`, category `15`, item 52.
 When multiple systems exist, a three-character system identifier prefixes the
 address: `[A-Z][0-9][0-9]`.
 
-- Examples: `N42.15.52`, `G24.11.01`, `S16.22.03`
-- The system prefix is part of the folder name: `N42 Personal/`, `G24 GitHub/`
+- Examples: `P10.15.52`, `W20.11.01`, `C40.22.03`
+- The system prefix is part of the folder name: `P10 Personal/`, `W20 Work/`
 - 2,600 possible system codes (A00–Z99)
 - Each system has its own independent area/category/ID namespace
 
@@ -106,9 +106,9 @@ AC.ID+NNNN
 Zero-padded four-digit sequential number. Example:
 
 ```
-53.01+0001  lexicon-garden
-53.01+0002  smoke-signal
-53.01+0003  atproto-oauth-demo
+53.01+0001  weather-api
+53.01+0002  task-runner
+53.01+0003  auth-dashboard
 ```
 
 ### Named +SUB
@@ -120,9 +120,9 @@ AC.ID+CODE
 Short alphanumeric code. Example:
 
 ```
-11.01+BOBS  Blind Bob's
-11.01+YCAB  Yellow Cab Tavern
-11.01+THER  Therapy Cafe
+11.01+REDD  The Red Door
+11.01+OAKS  Oak Street Cafe
+11.01+RIVR  Riverside Grill
 ```
 
 ### When to Use +SUB vs. Sequential IDs
@@ -181,8 +181,8 @@ is a `_reference.md` file in the referencing ID folder:
 
 This ID references content in another system.
 
-- **Source:** N42.34.01 (Health insurance)
-- **Location:** N42 Personal / 30-39 Money & legal / 34 Insurance / 34.01
+- **Source:** P10.34.01 (Health insurance)
+- **Location:** P10 Personal / 30-39 Money & legal / 34 Insurance / 34.01
 - **Notes:** [context about why this reference exists]
 ```
 

@@ -36,13 +36,13 @@ Skills activate automatically based on what you're doing:
 > process my inbox
 
 Discovered 2 systems with non-empty inboxes:
-  N42 Personal: 8 items
-  G24 GitHub: 3 items
+  P10 Personal: 8 items
+  W20 Work: 3 items
 
-Processing N42...
-  ✓ 2026-02-05 W-2 Form.pdf → N42.33.02 (2025 tax return)
-  ✓ 2026-02-06 Dentist receipt.pdf → N42.41.02 (Dental)
-  ? Meeting notes.md — medium confidence: N42.24.04 (Vanessa notes) or G24.14.01 (1:1 with Sam)?
+Processing P10...
+  ✓ 2026-02-05 W-2 Form.pdf → P10.33.02 (2025 tax return)
+  ✓ 2026-02-06 Dentist receipt.pdf → P10.41.02 (Dental)
+  ? Meeting notes.md — medium confidence: P10.24.04 (Alex notes) or W20.14.01 (1:1 with Morgan)?
   ...
 ```
 
@@ -52,11 +52,11 @@ Processing N42...
 > /jd:setup-system
 
 What kind of system? Child/dependent
-System code: H11
-System name: Hannah
+System code: K30
+System name: Jamie
 Root: ~/Library/Mobile Documents/com~apple~CloudDocs/JD/
 
-Creating H11 Hannah...
+Creating K30 Jamie...
   00-09 System ✓
   10-19 Identity & documents ✓
   20-29 School ✓
@@ -66,9 +66,9 @@ Creating H11 Hannah...
 ### Audit after manual reorganization
 
 ```
-> /jd:jdex-audit N42
+> /jd:jdex-audit P10
 
-JDex Audit: N42 Personal
+JDex Audit: P10 Personal
   JDex entries: 87
   Filesystem folders: 89
   ✗ 2 undocumented folders found
@@ -89,7 +89,7 @@ If your JD root is elsewhere, the plugin will ask when you first use it.
 
 ### Multi-system support
 
-The plugin handles both single-system and multi-system setups. Systems are identified by their `[A-Z][0-9][0-9]` prefix (e.g., `N42 Personal`, `G24 GitHub`).
+The plugin handles both single-system and multi-system setups. Systems are identified by their `[A-Z][0-9][0-9]` prefix (e.g., `P10 Personal`, `W20 Work`).
 
 ## What is Johnny.Decimal?
 

@@ -26,7 +26,7 @@ Check common locations:
 - `~/Documents/JD/`
 - `~/JD/`
 
-If the user specifies a system code (e.g., "audit my N42 system"), target
+If the user specifies a system code (e.g., "audit my P10 system"), target
 that specific system. Otherwise, list all available systems and ask which
 to audit.
 
@@ -87,7 +87,7 @@ For categories that use +SUB extensions:
 
 ### 3.1 Locate Index Files
 
-+SUB categories typically have an index file (e.g., `51.01 ATProto project
++SUB categories typically have an index file (e.g., `51.01 Open-source project
 index.md`). Find these by looking for files matching `*.md` at the category
 or ID level that contain +SUB listings.
 
@@ -198,6 +198,6 @@ When auditing multiple systems:
 
 1. Audit each system independently.
 2. Present per-system reports.
-3. Optionally check cross-system references: if N42.34.01 is referenced by
-   V06.32.01, verify that both the source and the reference exist.
+3. Optionally check cross-system references: if P10.34.01 is referenced by
+   F50.32.01, verify that both the source and the reference exist.
 4. Provide a combined summary at the end.

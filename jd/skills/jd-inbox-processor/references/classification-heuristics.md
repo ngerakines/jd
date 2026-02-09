@@ -128,8 +128,8 @@ When inbox items have unhelpful filenames (e.g., `scan001.pdf`, `IMG_4521.jpg`,
 
 Good renames:
 - `scan001.pdf` → `2026-01-15 Property tax statement.pdf`
-- `IMG_4521.jpg` → `2026-02-01 Shelf placement photo DLM.jpg`
-- `Untitled.md` → `2026-02-08 Buyer meeting notes Blind Bobs.md`
+- `IMG_4521.jpg` → `2026-02-01 Shelf placement photo Acme.jpg`
+- `Untitled.md` → `2026-02-08 Buyer meeting notes Red Door.md`
 
 ---
 
@@ -140,8 +140,8 @@ Use these examples to calibrate your confidence levels:
 ### High Confidence (act without asking)
 
 - A PDF titled "2026 W-2 Form" in a system that has `31.xx Taxes` → file it
-- A note starting with "Met with Sarah at DLM" in a work system with a
-  DLM account folder → file it in the DLM account
+- A note starting with "Met with Jordan at Acme" in a work system with an
+  Acme account folder → file it in the Acme account
 - A photo named "passport scan" in a personal system with `11.xx Identity
   documents` → file it
 
