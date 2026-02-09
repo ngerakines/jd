@@ -12,7 +12,7 @@ correct ID location.
 
 ## Arguments
 
-`$ARGUMENTS` may contain a system code (e.g., `N42`) to process a specific
+`$ARGUMENTS` may contain a system code (e.g., `P10`) to process a specific
 system's inbox. If no argument is provided, discover all systems and their
 inboxes, then ask which to process.
 
@@ -42,6 +42,6 @@ user approve, modify, or flag specific items before executing.
 
 ```
 /jd:process-inbox
-/jd:process-inbox N42
-/jd:process-inbox G24
+/jd:process-inbox P10
+/jd:process-inbox W20
 ```

@@ -28,9 +28,9 @@ within a single ID.
 Zero-padded four-digit sequential number:
 
 ```
-53.01+0001  lexicon-garden
-53.01+0002  smoke-signal
-53.01+0003  atproto-oauth-demo
+53.01+0001  weather-api
+53.01+0002  task-runner
+53.01+0003  auth-dashboard
 ```
 
 ### Named +SUB: `AC.ID+CODE`
@@ -38,9 +38,9 @@ Zero-padded four-digit sequential number:
 Short alphanumeric code:
 
 ```
-11.01+BOBS  Blind Bob's
-11.01+YCAB  Yellow Cab Tavern
-11.01+THER  Therapy Cafe
+11.01+REDD  The Red Door
+11.01+OAKS  Oak Street Cafe
+11.01+RIVR  Riverside Grill
 ```
 
 ### When Each Format is Used
@@ -77,7 +77,7 @@ Scan the system's categories and list those with +SUB folders.
 
 Each +SUB category should have an index file. Common patterns:
 
-- `AC.ID [Category] index.md` (e.g., `51.01 ATProto project index.md`)
+- `AC.ID [Category] index.md` (e.g., `51.01 Open-source project index.md`)
 - `AC.00 [Category] index.md` (e.g., `51.00 Projects area index.md`)
 
 If no index file exists, offer to create one.
@@ -107,9 +107,9 @@ creation date, and status:
 
 | +SUB | Name | Created | Status |
 |------|------|---------|--------|
-| +0001 | lexicon-garden | 2025-06-01 | active |
-| +0002 | smoke-signal | 2025-08-15 | active |
-| +0003 | atproto-oauth-demo | 2025-11-01 | archived |
+| +0001 | weather-api | 2025-06-01 | active |
+| +0002 | task-runner | 2025-08-15 | active |
+| +0003 | auth-dashboard | 2025-11-01 | archived |
 ```
 
 For named +SUB:
@@ -119,9 +119,9 @@ For named +SUB:
 
 | +SUB | Name | Created | Status |
 |------|------|---------|--------|
-| +BOBS | Blind Bob's | 2025-01-10 | active |
-| +YCAB | Yellow Cab Tavern | 2025-03-22 | active |
-| +THER | Therapy Cafe | 2025-05-01 | active |
+| +REDD | The Red Door | 2025-01-10 | active |
+| +OAKS | Oak Street Cafe | 2025-03-22 | active |
+| +RIVR | Riverside Grill | 2025-05-01 | active |
 ```
 
 ### 4.2 Sync Process
@@ -183,10 +183,10 @@ Append the new entry to the index file.
 Add the new +SUB entry to the system's JDex under its parent ID:
 
 ```markdown
-- 53.01 ATProto projects
-  - 53.01+0001 lexicon-garden
-  - 53.01+0002 smoke-signal
-  - 53.01+0003 atproto-oauth-demo
+- 53.01 Open-source projects
+  - 53.01+0001 weather-api
+  - 53.01+0002 task-runner
+  - 53.01+0003 auth-dashboard
   - 53.01+0004 [new entry]     ← added
 ```
 

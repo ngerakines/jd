@@ -12,7 +12,7 @@ issues.
 
 ## Arguments
 
-`$ARGUMENTS` may contain a system code (e.g., `N42`) to audit a specific
+`$ARGUMENTS` may contain a system code (e.g., `P10`) to audit a specific
 system. If no argument is provided, list all available systems and ask which
 to audit.
 
@@ -44,6 +44,6 @@ to audit.
 
 ```
 /jd:jdex-audit
-/jd:jdex-audit N42
-/jd:jdex-audit V06
+/jd:jdex-audit P10
+/jd:jdex-audit F50
 ```

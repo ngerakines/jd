@@ -45,8 +45,8 @@ exactly one, confirm it. If you find multiple or none, ask.
 ### 1.2 Identify Systems
 
 List the top-level folders under the JD root. Each folder whose name matches
-the pattern `[A-Z][0-9][0-9] *` is a JD system (e.g., `N42 Personal`,
-`G24 GitHub`, `S16 SixCity`).
+the pattern `[A-Z][0-9][0-9] *` is a JD system (e.g., `P10 Personal`,
+`W20 Work`, `C40 Citywide`).
 
 If the user has a single system (no SYS prefix), that's fine — treat the
 entire JD root as one system.
@@ -83,7 +83,7 @@ SYS/00-09 */00 */00.01 Inbox/
 ```
 
 List the contents of every inbox you find. If the user asked to process a
-specific system's inbox (e.g., "process my N42 inbox"), limit to that one.
+specific system's inbox (e.g., "process my P10 inbox"), limit to that one.
 
 ### 2.2 Assess the Inbox
 
@@ -128,7 +128,7 @@ ambiguous cases.
 If the user has multiple systems, determine which system the item belongs to.
 Signals include:
 
-- Explicit system references in the content ("SixCity," "work," "personal")
+- Explicit system references in the content ("Citywide," "work," "personal")
 - Content domain (tax docs → personal, buyer meeting notes → work)
 - Filename patterns or prefixes the user may use
 
@@ -158,7 +158,7 @@ Within the category, determine the specific ID folder:
 
 - **Existing ID matches**: The item clearly belongs in an existing ID folder.
   Use it.
-- **+SUB match**: If the category uses `+SUB` extensions (e.g., `11.01+BOBS`),
+- **+SUB match**: If the category uses `+SUB` extensions (e.g., `11.01+REDD`),
   match the item to the correct sub-entry.
 - **New ID needed**: If no existing ID fits, you may need to create one.
   See §3.4.
@@ -178,7 +178,7 @@ If you'd want a second opinion, it's medium. If you're guessing, it's low.
 
 When asking the user, be specific. Not "where should this go?" but rather:
 
-> This looks like a health insurance claim. I'd file it at **N42.34.01**
+> This looks like a health insurance claim. I'd file it at **P10.34.01**
 > (Health insurance). Does that sound right, or does it belong somewhere else?
 
 ### 3.4 Creating New IDs
@@ -242,7 +242,7 @@ you identify a task, extract it.
 
 Look for:
 
-- Explicit action items ("need to send pricing," "follow up with Sarah")
+- Explicit action items ("need to send pricing," "follow up with Jordan")
 - Deadlines ("by end of week," "before March 8")
 - Commitments ("promised to deliver," "agreed to check on")
 - Questions that need answers ("check with warehouse," "ask about delivery")
@@ -325,7 +325,7 @@ When the user says "process my inboxes" (plural) or doesn't specify a system:
 2. Report the item count per system.
 3. Ask whether to process all of them or just specific ones.
 4. Process each system's inbox in sequence. Keep system context separate —
-   don't confuse N42's JDex with G24's categories.
+   don't confuse P10's JDex with W20's categories.
 5. At the end, give a combined summary across all systems.
 
 ---
@@ -363,8 +363,8 @@ user control.
 When the user corrects a classification or makes a non-obvious filing decision,
 note the reasoning. This helps you classify similar items in the future within
 the same session. For example, if the user says "actually, I keep all
-Streetside stuff in 31.02, not by account," apply that pattern to subsequent
-Streetside items.
+Northside stuff in 31.02, not by account," apply that pattern to subsequent
+Northside items.
 
 ---
 
