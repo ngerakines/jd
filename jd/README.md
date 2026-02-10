@@ -16,6 +16,7 @@ claude plugins add jd-plugins/jd
 | `/jd:jdex-audit [system-code]` | Compare JDex against folder structure, flag mismatches |
 | `/jd:setup-system` | Initialize a new JD system with folders, standard zeros, and JDex |
 | `/jd:sub-index [system-code] [category]` | Manage +SUB index files, assign next numbers, create entries |
+| `/jd:manage-tasks [system-code] [action] [filter]` | Manage tasks — view, add, complete, cancel, modify using jdtodo.txt format |
 
 ## Skills
 
@@ -27,6 +28,7 @@ Skills activate automatically based on what you're doing:
 | **jd-system-setup** | "set up my JD system," "create a new system," "initialize JD" |
 | **jd-jdex-audit** | "audit my JDex," "check my system," "sync JDex," "verify my JD system" |
 | **jd-sub-index** | "update sub index," "add a new project," "what's the next sub number" |
+| **jd-task-manager** | "show my tasks," "what's due today," "add a task," "mark that done," "review my someday list" |
 
 ## Example Workflows
 
@@ -75,6 +77,32 @@ JDex Audit: P10 Personal
   ✗ 1 name mismatch
 
 Add 11.08 Garage storage to JDex? [y/n]
+```
+
+### Manage your tasks
+
+```
+> show my tasks
+
+P10 Personal: 12 active tasks (3 overdue)
+  (A) Submit quarterly tax estimate +N42.13.02 due:2026-04-15
+  (A) Respond to P0 follow-up +G24.21.05 due:2026-02-10 [OVERDUE]
+  ...
+
+> /jd:manage-tasks P10 add
+
+What's the task? Call insurance about claim deductible
+Priority? (A)
+JD location? N42.11.03
+Context? @phone
+Due date? next Friday
+
+Added: (A) 2026-02-09 Call insurance about claim deductible +N42.11.03 @phone due:2026-02-14
+
+> mark the tax estimate done
+
+Completed: x 2026-02-09 Submit quarterly tax estimate +N42.13.02 @laptop pri:A
+Moved to done.txt.
 ```
 
 ## Configuration
